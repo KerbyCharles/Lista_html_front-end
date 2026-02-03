@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    background-color: rgb(241, 182, 110);
+    border: 2px solid rebeccapurple; 
+}
+h1 {
+    color: rgb(44, 23, 199);
+}
+header{
+    background-color: white;
+    box-shadow: 0 2px  10px rgba(0,0,0,0.1);
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: nome;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+.logo-icon{
+    margin-right: 10px;
+    background-color: rgb(44, 23, 199);
+    color: white;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.logo-text{
+    font-weight: bold;
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-link{
+    text-decoration: none;
+    color: color(from color srgb r g b);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.nav-link:hover {
+    color: rgb(47, 14, 214);
+}
+.nav-link:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(92, 92, 176);
+    transition: all 0.3s ease;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.header-action{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.btn-portal{
+    text-decoration: none;
+    color: blue;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.btn-enroll{
+    text-decoration: none;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-enroll:hover {
+    transform: translateY(-2px);
+    box-shadow:  0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f39c12;
+}
